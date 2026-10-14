@@ -1,0 +1,149 @@
+MULAI
+
+Buat smart contract "Verifikasi Ijazah"
+
+        Siapkan tempat untuk membaca data ijazah
+
+        Setiap ijazah memiliki:
+        Hash
+        Nama pemilik ijazah
+        NIM pemilik ijazah
+        Nomor Ijazah
+        Tahun lulus
+        Program Studi
+        Universitas
+        Status
+
+================================
+1. MENAMBAHKAN IJAZAH
+================================
+ketika admin menambahkan data ijazah
+
+        input data ijazah
+
+        validasi data apakah data lengkap?
+        jika benar:
+            simpan data ijazah
+            status ijazah berhasil ditambahkan
+
+        jika salah:
+            status error
+        
+        selesai
+
+=====================================
+2. FERIVIKASI IJAZAH
+=====================================
+ketika akan mengecek apakah ijazah benar-benar terdaftar
+        Input nomor ijazah
+
+        cari data ijazah
+        
+        apakah data ditemukan?
+        jika benar:
+        periksa data ijazah
+
+            apakah data ijazah sesuai?
+            jika benar:
+            status ijazah valid
+
+            jika salah:
+            status ijazah tidak valid
+        
+        jika salah:
+        ijazah tidak terdaftar
+
+        selesai
+
+================================
+3.CEK KEASLIAN DATA
+================================
+Ketika akan mengecek apakah ijazah tidak ada perubahan
+        Ambil data ijazah
+
+        periksa data blockchain
+
+        apakah data masih sesuai?
+        jika benar:
+        data asli
+
+        jika tidak:
+        data tidak asli
+
+        selesai
+
+===============================
+4. LIHAT DATA IJAHZAH
+===============================
+Ketika akan melihat data ijazah yang terimpan
+        Input nomor Ijazah
+
+        Cari data ijazah
+            apakah data ditemukan?
+            Jika tidak:
+            "Data tidak ditemukan"
+
+            Jika iya:
+            Tampilkan data ijazah
+            Nama:
+            NIM:
+            Program Studi:
+            Nomor Ijazah:
+            Tahun Lulus:
+        selesai
+
+=============================
+5. VALIDASI PENGGUNA
+=============================
+Ketika akan memastikan siapa yang boleh melakukan suatu tindakan
+        Pengguna Login
+        
+        Input username dan password
+
+        Apakah data login benar?
+            jika tidak:
+            akses ditolak
+            SELESAI
+
+            jika iya:
+            Cek hak akses
+
+                Apakah pengguna berwenang?
+                    Jika tidak:
+                    akses ditolak
+
+                    jika iya:
+                    akses diberikan
+        SELESAI
+
+=============================
+6. CETAK IJAZAH
+=============================
+Ketika akan mencetak ijazah
+    input nomor ijazah
+    cari data ijazah
+
+        apakah data ditemukan
+        jika tidak:
+        tampilkan "data tidak ditemukan"
+
+        jika benar:
+        tampilkan preview ijazah
+
+            konfirmasi cetak ijazah
+            jika tidak:
+            batal dicetak
+
+            jika benar:
+            cetak ijazah
+            ijazah berhasil dicetak
+
+    SELESAI
+
+
+
+
+
+
+
+    
